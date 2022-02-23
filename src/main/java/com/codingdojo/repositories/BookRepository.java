@@ -1,6 +1,6 @@
 package com.codingdojo.repositories;
 
-import java.util.Optional;
+import java.util.List;
 
 import javax.transaction.Transactional;
 
@@ -11,13 +11,14 @@ import com.codingdojo.models.Book;
 
 @Repository
 public interface BookRepository extends CrudRepository<Book, Long>{
-	 
-	Optional<Book> findById( Long id );
+	List<Book> findAll();
 	
 	@SuppressWarnings("unchecked")
 	Book save( Book bookEncontrado ); //INSERT
-	 
-	 @Transactional
-	 void deleteById( Long id );
+	
+	@Transactional
+	void deleteById( Long id );
+	
+	List<Book> findByid( Long id );
 	 
 }

@@ -15,7 +15,7 @@ public class Book {
 	private String title;
 	
 	@NotNull
-	private String desc;
+	private String descr;
 	
 	@NotNull
 	private String lang;
@@ -26,10 +26,10 @@ public class Book {
 	public Book() {
 	}
 	
-	public Book(Long id, String title, String desc, String lang, Integer numOfPages) {
+	public Book(Long id, String title, String descr, String lang, Integer numOfPages) {
 		this.id = id;
 		this.title = title;
-		this.desc = desc;
+		this.descr = descr;
 		this.lang = lang;
 		this.numOfPages = numOfPages;
 	}
@@ -50,12 +50,12 @@ public class Book {
 		this.title = title;
 	}
 
-	public String getDesc() {
-		return desc;
+	public String getDescr() {
+		return descr;
 	}
 
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setDesc(String descr) {
+		this.descr = descr;
 	}
 
 	public String getLang() {
