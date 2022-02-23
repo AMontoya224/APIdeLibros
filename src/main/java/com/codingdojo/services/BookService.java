@@ -31,16 +31,19 @@ public class BookService {
 	
 	public Book selectFromBooksWhereId( Long id ) {
 		List<Book> bookEncontrado = bookRepository.findByid(id);
-		if ( bookEncontrado.isEmpty() ) {
-			return null;
+		if ( bookEncontrado.isEmpty() ) { 
+			Long id_0 = 0L;
+			Integer num_0 = 0;
+			Book bookVacio = new Book(id_0, "N/A", "N/A", "N/A", num_0);
+			return bookVacio; 
 		}
 		else {
 			return bookEncontrado.get(0);
 		}
 	}
 	
-	public Book selectFromBooks() {
+	public List<Book> selectFromBooks() {
 		List<Book> bookEncontrado = bookRepository.findAll();
-		return bookEncontrado.get(0);
+		return bookEncontrado;
 	}
 }

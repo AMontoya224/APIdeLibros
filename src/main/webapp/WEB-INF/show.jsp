@@ -28,7 +28,7 @@
 			Language: <c:out value="${book.getLang()}"/>
 		</h3>
 		<h3>
-			Number of Pages: <c:out value="${book.getNumOfPages()}"/>
+			Number of Pages: <c:out value="${book.getNumOfPages().intValue()}"/>
 		</h3>
 	</body>
 </html>

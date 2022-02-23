@@ -1,0 +1,56 @@
+@charset "ISO-8859-1";
+
+
+
+body{
+    margin: 3vw 10vw;
+    padding: 0;
+    font-size: 1.5vw;
+    color: rgb(5, 5, 5);
+    background-color: white;
+    text-align: center;
+}
+
+h1{
+	color: DarkCyan;
+}
+
+table{
+	margin: 0 auto;
+}
+
+th, td{
+    padding: 0.4vw;
+    text-align: center;
+    width: 25.5vw;
+    border-bottom: 0.1vw solid rgb(50, 50, 50);
+    transition: 0.5s;
+}
+
+th{
+    color: white;
+    font-size: 1.8vw;
+    background-color: rgb(54, 54, 54);
+}
+
+th:hover{
+    background-color: rgb(38, 38, 38);
+}
+
+td:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+.link{
+	color: DodgerBlue;
+	background-color: transparent;
+	border: none;
+    padding: 0 2vw;
+    margin:0;
+    font-size: 1.5vw;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.link:hover{
+	color: RoyalBlue;
+}
